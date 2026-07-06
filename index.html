@@ -1,0 +1,602 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Can You Increase Buyer Interest Without Renovating Your Melbourne Home?</title>
+    <!-- Premium Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Global Styles & Typography */
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { 
+            background: linear-gradient(135deg, #e8f0f8 0%, #dce6f0 100%); 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            color: #334155; 
+            line-height: 1.8; 
+            font-size: 1.1rem;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        /* HEADER STYLE */
+        .main-header {
+            background: #ffffff;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            position: relative;
+            z-index: 20;
+        }
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo img {
+            height: 110px;
+            mix-blend-mode: multiply; /* Removes white background */
+            display: block;
+        }
+        .business-name {
+            font-size: 30px;
+            font-weight: 800;
+            color: #1e3a8a;
+            letter-spacing: -0.5px;
+        }
+
+        /* Premium Hero Section */
+        .hero {
+            position: relative;
+            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(30, 58, 138, 0.75)), url('hero section.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 100px 20px 140px 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .hero-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            line-height: 1.3;
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            text-shadow: 0 4px 15px rgba(0,0,0,0.6);
+        }
+        .hero p {
+            font-size: 1.15rem;
+            color: #f8fafc;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+            margin: 0 auto 15px auto;
+            text-align: justify;
+        }
+
+        /* Main Container for Premium Cards */
+        .container { 
+            max-width: 1150px; 
+            margin: -60px auto 70px auto; 
+            padding: 0 20px;
+            position: relative;
+            z-index: 10;
+        }
+        
+        /* Premium Corporate Cards */
+        .card { 
+            background: linear-gradient(145deg, #ffffff 0%, #f4f7fa 100%); 
+            border-radius: 12px; 
+            padding: 50px 60px; 
+            margin-bottom: 35px; 
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04); 
+            border: 1px solid #ffffff;
+            opacity: 0; 
+            transform: translateY(20px); 
+            transition: transform 0.5s ease, box-shadow 0.5s ease, opacity 0.5s ease;
+        }
+        .card.visible { 
+            opacity: 1; 
+            transform: translateY(0); 
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Headings & Typography */
+        h2 { 
+            font-size: 2rem; 
+            color: #0f172a; 
+            margin-top: 0;
+            margin-bottom: 25px; 
+            line-height: 1.3;
+            letter-spacing: -0.5px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        h2::before {
+            content: '';
+            display: block;
+            width: 6px;
+            height: 28px;
+            background: linear-gradient(to bottom, #3b82f6, #1d4ed8);
+            border-radius: 4px;
+        }
+        h3 { 
+            font-size: 1.35rem; 
+            color: #1e293b; 
+            margin-top: 35px; 
+            margin-bottom: 15px; 
+            font-weight: 700;
+        }
+        p { 
+            text-align: justify; 
+            margin-bottom: 20px; 
+            color: #475569;
+        }
+        a.content-link { 
+            color: #2563eb; 
+            font-weight: 600; 
+            text-decoration: none; 
+            border-bottom: 2px solid rgba(37,99,235,0.3);
+            transition: all 0.3s ease; 
+        }
+        a.content-link:hover { 
+            color: #1d4ed8; 
+            border-bottom-color: #1d4ed8;
+        }
+
+        /* Hover-based FAQs Section */
+        .faq-item { 
+            border: 1px solid #e2e8f0; 
+            border-radius: 10px; 
+            margin-bottom: 16px; 
+            background-color: #ffffff; 
+            overflow: hidden; 
+            transition: all 0.3s ease;
+        }
+        .faq-item:hover {
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.05); 
+            border-color: #bfdbfe;
+        }
+        .faq-q { 
+            padding: 22px 30px; 
+            font-weight: 700; 
+            color: #0f172a; 
+            margin: 0; 
+            position: relative; 
+            transition: color 0.3s ease; 
+            cursor: pointer;
+        }
+        .faq-item:hover .faq-q { color: #2563eb; }
+        .faq-q::after { 
+            content: '+'; 
+            position: absolute; 
+            right: 30px; 
+            top: 50%; 
+            transform: translateY(-50%); 
+            font-size: 1.6rem; 
+            color: #94a3b8; 
+            transition: all 0.3s ease; 
+        }
+        .faq-item:hover .faq-q::after { content: '−'; color: #2563eb; transform: translateY(-50%) rotate(180deg); }
+        .faq-a { 
+            max-height: 0; 
+            opacity: 0; 
+            padding: 0 30px; 
+            color: #475569; 
+            background-color: #f8fafc;
+            transition: all 0.4s ease-in-out; 
+        }
+        .faq-item:hover .faq-a { 
+            max-height: 400px; 
+            opacity: 1; 
+            padding: 20px 30px 25px 30px; 
+            border-top: 1px solid #e2e8f0;
+        }
+
+        /* Premium Business Information Section */
+        .business-card { 
+            background: linear-gradient(145deg, #0f172a 0%, #1e293b 100%); 
+            border: none;
+            color: #f1f5f9;
+        }
+        .business-header h2 { 
+            color: #ffffff;
+            justify-content: center;
+        }
+        .business-header h2::before { display: none; }
+        
+        .business-description { 
+            background-color: rgba(255, 255, 255, 0.05); 
+            padding: 30px; 
+            border-radius: 12px; 
+            border-left: 5px solid #3b82f6; 
+            color: #cbd5e1; 
+            text-align: justify; 
+            margin-bottom: 40px;
+        }
+        .business-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+            gap: 20px; 
+        }
+        .info-item { 
+            display: flex; 
+            align-items: flex-start; 
+            gap: 15px; 
+            background: rgba(255, 255, 255, 0.03);
+            padding: 22px;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.07);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .info-item:hover { transform: translateY(-3px); background: rgba(255, 255, 255, 0.05); }
+        .info-icon { color: #60a5fa; flex-shrink: 0; margin-top: 2px; }
+        .info-text strong { display: block; color: #ffffff; font-size: 1.05rem; margin-bottom: 4px; }
+        .info-text span, .info-text a { color: #94a3b8; font-size: 1.05rem; text-decoration: none; transition: color 0.3s;}
+        .info-text a:hover { color: #60a5fa; text-decoration: underline; }
+
+        /* Social Icons Area */
+        .social-section { 
+            border-top: 1px solid rgba(255,255,255,0.1); 
+            padding-top: 35px; 
+            margin-top: 40px; 
+            text-align: center; 
+        }
+        .social-title { font-size: 1.3rem; font-weight: 700; color: #ffffff; margin-bottom: 25px; }
+        .social-icons { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
+        .social-icons a { 
+            display: flex; align-items: center; justify-content: center; 
+            width: 50px; height: 50px; border-radius: 50%; 
+            background-color: rgba(255,255,255,0.05); 
+            border: 1px solid rgba(255,255,255,0.1); 
+            transition: all 0.3s ease; 
+            color: #cbd5e1;
+        }
+        
+        .social-icons a:hover { transform: translateY(-4px); background-color: #ffffff; border-color: transparent;}
+        .icon-fb:hover { color: #1877F2 !important; box-shadow: 0 8px 15px rgba(24,119,242,0.3); } 
+        .icon-yt:hover { color: #FF0000 !important; box-shadow: 0 8px 15px rgba(255,0,0,0.3); } 
+        .icon-ig:hover { fill: url(#ig-gradient); color: #E1306C !important; box-shadow: 0 8px 15px rgba(225,48,108,0.3); } 
+        .icon-tk:hover { color: #000000 !important; box-shadow: 0 8px 15px rgba(255,255,255,0.2); }
+        .icon-x:hover { color: #000000 !important; box-shadow: 0 8px 15px rgba(255,255,255,0.2); } 
+        .icon-pin:hover { color: #E60023 !important; box-shadow: 0 8px 15px rgba(230,0,35,0.3); } 
+        .icon-in:hover { color: #0A66C2 !important; box-shadow: 0 8px 15px rgba(10,102,194,0.3); } 
+        .icon-red:hover { color: #FF4500 !important; box-shadow: 0 8px 15px rgba(255,69,0,0.3); } 
+        .icon-ab:hover { color: #0055FF !important; box-shadow: 0 8px 15px rgba(0,85,255,0.3); } 
+        .icon-tm:hover { color: #35465C !important; box-shadow: 0 8px 15px rgba(53,70,92,0.3); } 
+        .icon-bs:hover { color: #0085FF !important; box-shadow: 0 8px 15px rgba(0,133,255,0.3); } 
+        .icon-lt:hover { color: #43E660 !important; box-shadow: 0 8px 15px rgba(67,230,96,0.3); }
+
+        .social-icons svg { width: 22px; height: 22px; fill: currentColor; }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .header-container { flex-direction: column; gap: 10px; }
+            .logo img { height: 80px; }
+            .business-name { font-size: 22px; }
+            .hero { padding: 80px 15px; }
+            .hero h1 { font-size: 2.1rem; }
+            .container { margin-top: -30px; padding: 0 15px; }
+            .card { padding: 35px 25px; }
+            h2 { font-size: 1.7rem; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hidden SVG definitions for Gradients -->
+<svg width="0" height="0" style="position:absolute;">
+  <defs>
+    <radialGradient id="ig-gradient" r="150%" cx="30%" cy="107%">
+      <stop stop-color="#fdf497" offset="0" />
+      <stop stop-color="#fd5949" offset="0.45" />
+      <stop stop-color="#d6249f" offset="0.6" />
+      <stop stop-color="#285AEB" offset="1" />
+    </radialGradient>
+  </defs>
+</svg>
+
+<!-- HEADER (Logo + Name) -->
+<header class="main-header">
+    <div class="header-container">
+        <div class="logo">
+            <img src="logo.jpg" alt="Style Homes Melbourne Logo">
+        </div>
+        <div class="business-name">
+            Style Homes Melbourne
+        </div>
+    </div>
+</header>
+
+<!-- Premium Hero Section -->
+<div class="hero">
+    <div class="hero-content">
+        <h1>How Can You Increase Buyer Interest Without Renovating Your Melbourne Home?</h1>
+        <p>Many Melbourne homeowners believe they need expensive renovations before listing their property for sale. This assumption can lead to unnecessary spending, delayed marketing campaigns, and improvements that deliver little return on investment. In reality, buyers often respond more positively to homes that are clean, bright, well-presented, and move-in ready than to recently renovated properties that lack thoughtful presentation.</p>
+        <p>The good news is that major renovations are not always necessary to attract strong buyer interest. By focusing on presentation, creating positive first impressions, and highlighting your home's existing strengths, you can improve its appeal while avoiding the cost, time, and disruption associated with large-scale renovation projects.</p>
+    </div>
+</div>
+
+<!-- Main Container with Premium Cards -->
+<div class="container">
+
+    <div class="card">
+        <h2>Why Buyer Perception Matters More Than Expensive Renovations</h2>
+        
+        <h3>Buyers Form Opinions Within Minutes</h3>
+        <p>Potential buyers often develop an opinion within the first few minutes of viewing a property, whether through online photographs or during an inspection. Bright, welcoming spaces and a positive emotional connection can significantly influence how buyers perceive the home's overall value.</p>
+
+        <h3>Presentation Creates Confidence</h3>
+        <p>A clean, well-maintained property gives buyers confidence that the home has been cared for. Organised spaces, functional room layouts, and attention to detail encourage buyers to focus on the property's potential instead of looking for flaws.</p>
+
+        <h3>Renovation Isn't Always the Best Investment</h3>
+        <p>Major renovations can be expensive and may not always deliver a worthwhile return. In many cases, buyer expectations are better met through simple improvements that enhance presentation rather than costly upgrades that exceed the standards of the local Melbourne property market.</p>
+    </div>
+
+    <div class="card">
+        <h2>Low-Cost Improvements That Increase Buyer Interest</h2>
+        
+        <h3>Declutter Every Room</h3>
+        <p>Removing personal belongings, organising storage areas, and reducing unnecessary furniture helps rooms appear larger and allows buyers to focus on the property's layout and features. For a complete room-by-room checklist of what should be removed before inspections, read <a href="https://propertystagingmelbourne-ea4eb4.gitlab.io/" class="content-link" target="_blank">What Should You Remove From Your Melbourne Home Before an Inspection?</a> to create a cleaner, more spacious presentation that appeals to Melbourne buyers.</p>
+
+        <h3>Deep Clean the Entire Property</h3>
+        <p>A professionally cleaned home creates a stronger first impression. Pay particular attention to kitchens, bathrooms, windows, flooring, and other high-visibility areas to present the property at its best.</p>
+
+        <h3>Complete Minor Repairs</h3>
+        <p>Address small maintenance issues such as loose door handles, cracked caulking, paint touch-ups, and faulty light fixtures. These inexpensive repairs help demonstrate that the home has been well maintained.</p>
+
+        <h3>Refresh the Home With Simple Updates</h3>
+        <p>Neutral décor, healthy indoor plants, modern cushions, fresh linens, and tasteful accessories can refresh living spaces without requiring major renovations. Small styling improvements often make the home feel brighter, more inviting, and ready for new owners.</p>
+    </div>
+
+    <div class="card">
+        <h2>Improve Buyer Experience During Inspections</h2>
+        
+        <h3>Maximise Natural Light</h3>
+        <p>Bright interiors create a welcoming atmosphere and help rooms feel larger. Open curtains and blinds, clean windows thoroughly, and allow as much natural light as possible to flow through the home before every inspection.</p>
+
+        <h3>Rearrange Furniture</h3>
+        <p>Thoughtfully arranged furniture improves room flow, highlights available space, and creates comfortable layouts that help buyers understand how each area can be used.</p>
+
+        <h3>Create a Neutral Environment</h3>
+        <p>Remove personal belongings, choose a soft colour palette, and keep decorations simple. A neutral presentation allows buyers to focus on the home's features and imagine how they would personalise the space.</p>
+
+        <h3>Prepare for Professional Marketing</h3>
+        <p>Many homeowners researching <a href="https://www.housestagingmelbourne.com.au/" class="content-link" target="_blank">home staging melbourne australia</a> compare professional staging solutions before arranging property photography, online listings, and open-home inspections. Professional staging can enhance presentation, improve visual appeal, and help create stronger first impressions without requiring major renovations.</p>
+    </div>
+
+    <div class="card">
+        <h2>Exterior Improvements That Attract Buyers First</h2>
+        
+        <h3>Enhance Street Appeal</h3>
+        <p>First impressions begin outside the home. Mow the lawn, trim hedges, remove weeds from garden beds, and maintain tidy landscaping to create an attractive exterior.</p>
+
+        <h3>Refresh the Entrance</h3>
+        <p>A clean front door, a new welcome mat, and modern house numbers can significantly improve the home's entrance and make buyers feel welcomed from the moment they arrive.</p>
+
+        <h3>Improve Outdoor Living Areas</h3>
+        <p>Sweep patios, clean outdoor furniture, and organise entertaining spaces to showcase the property's outdoor lifestyle potential. Well-presented outdoor areas can become valuable selling features.</p>
+
+        <h3>Maintain Exterior Cleanliness</h3>
+        <p>Pressure wash pathways, clean gutters, and wash garage doors to improve the property's overall appearance. A clean exterior reinforces the impression that the home has been well cared for.</p>
+    </div>
+
+    <div class="card">
+        <h2>Marketing Strategies That Increase Buyer Attention</h2>
+        
+        <h3>Invest in Professional Photography</h3>
+        <p>High-quality photographs taken with natural lighting and appropriate wide-angle techniques help showcase the property's best features and attract more attention in online listings.</p>
+
+        <h3>Write a Strong Property Description</h3>
+        <p>An effective property description highlights lifestyle benefits, unique selling points, and nearby amenities while helping buyers understand what makes the home appealing.</p>
+
+        <h3>Schedule Well-Planned Inspections</h3>
+        <p>Weekend open homes, flexible viewing times, and consistently clean presentation make it easier for interested buyers to inspect the property and leave with a positive impression.</p>
+
+        <h3>Work With Local Market Professionals</h3>
+        <p>Experienced local real estate professionals can provide guidance on pricing strategy, buyer expectations, and marketing approaches that align with current conditions in the Melbourne property market.</p>
+    </div>
+
+    <div class="card">
+        <h2>Common Mistakes That Reduce Buyer Interest</h2>
+        
+        <h3>Ignoring Minor Repairs</h3>
+        <p>Small issues such as chipped paint, loose handles, cracked caulking, or damaged fixtures can make buyers question how well the property has been maintained. Completing these minor repairs before listing helps build buyer confidence.</p>
+
+        <h3>Leaving Personal Clutter</h3>
+        <p>Family photographs, excess furniture, paperwork, and everyday household items can distract buyers from the home's features. Decluttering allows rooms to feel larger, brighter, and easier for buyers to visualise as their own.</p>
+
+        <h3>Overpersonalising the Home</h3>
+        <p>Bold wall colours, niche décor, and highly customised spaces may not appeal to every buyer. A neutral and inviting presentation generally attracts a broader audience and allows the property's strengths to stand out.</p>
+    </div>
+
+    <!-- FAQs Section -->
+    <div class="card">
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+            <div class="faq-q">Can a home sell well without renovations?</div>
+            <div class="faq-a"><p>Yes. Many homes attract strong buyer interest through excellent presentation, cleanliness, minor repairs, and effective marketing rather than expensive renovations.</p></div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">What improvements attract buyers the most?</div>
+            <div class="faq-a"><p>Decluttering, deep cleaning, fresh paint, improved lighting, landscaping, and addressing minor maintenance issues are among the improvements that often have the greatest impact on buyer appeal.</p></div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">Is professional home staging worth considering?</div>
+            <div class="faq-a"><p>Professional home staging can be beneficial for properties that need help showcasing their space, improving photography, or creating stronger first impressions during inspections. Whether it is worthwhile depends on the property's condition, target market, and selling strategy.</p></div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">Which rooms should sellers prioritise before inspections?</div>
+            <div class="faq-a"><p>The entryway, living room, kitchen, primary bedroom, bathrooms, and outdoor areas typically make the strongest impression and should be prioritised during preparation.</p></div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">How important is curb appeal when selling?</div>
+            <div class="faq-a"><p>Curb appeal is highly important because it creates the buyer's first impression. A tidy garden, clean pathways, and an inviting entrance encourage buyers to view the rest of the property positively.</p></div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">Should every repair be completed before listing?</div>
+            <div class="faq-a"><p>Major renovations are not always necessary, but addressing visible maintenance issues and completing minor repairs can improve buyer confidence and strengthen the property's overall presentation.</p></div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">How can homeowners prepare their property on a limited budget?</div>
+            <div class="faq-a"><p>Focus on high-impact, low-cost improvements such as decluttering, deep cleaning, completing simple repairs, refreshing décor, improving lighting, and maintaining the garden. These steps can significantly enhance buyer appeal without requiring a large investment.</p></div>
+        </div>
+    </div>
+
+    <!-- VIP Business Section -->
+    <div class="card business-card">
+        <div class="business-header">
+            <h2>trusted and reliable Style Homes Melbourne</h2>
+        </div>
+        <div class="business-description">
+            Home Styling Melbourne provides professional home staging and property styling services across Melbourne, helping homeowners, real estate agents, and property developers prepare market-ready homes that attract more buyers and achieve stronger sale results.
+        </div>
+
+        <div class="business-grid">
+            <div class="info-item">
+                <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                <div class="info-text">
+                    <strong>Owner Name</strong>
+                    <span>Anna Bonanni</span>
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <div class="info-text">
+                    <strong>Address</strong>
+                    <span>Level 2/696 Bourke St Melbourne VIC 3000 Australia</span>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <div class="info-text">
+                    <strong>Phone</strong>
+                    <a href="tel:0400079350">0400 079 350</a>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                <div class="info-text">
+                    <strong>Website</strong>
+                    <a href="https://www.housestagingmelbourne.com.au/" target="_blank">housestagingmelbourne.com.au</a>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <div class="info-text">
+                    <strong>Business Email</strong>
+                    <a href="mailto:info@housestagingmelbourne.com.au">info@housestagingmelbourne.com.au</a>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <div class="info-text">
+                    <strong>Hours</strong>
+                    <span>Monday to Sunday: Open 24 Hours</span>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                <div class="info-text">
+                    <strong>Year Established</strong>
+                    <span>1999</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-section">
+            <div class="social-title">Connect With Us on Social Media</div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/stylehomesmelbourne/" class="icon-fb" target="_blank" aria-label="Facebook">
+                    <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </a>
+                <a href="https://www.youtube.com/@StyleHomesMelbourne" class="icon-yt" target="_blank" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                </a>
+                <a href="https://www.instagram.com/housestagingmelbourne/" class="icon-ig" target="_blank" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor" stroke-width="2"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2"></line></svg>
+                </a>
+                <a href="https://www.tiktok.com/@housestagingmelbourne" class="icon-tk" target="_blank" aria-label="TikTok">
+                    <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+                </a>
+                <a href="https://x.com/housestagingvic" class="icon-x" target="_blank" aria-label="X (Twitter)">
+                    <svg viewBox="0 0 24 24"><path d="M4 4l16 16m0-16L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg>
+                </a>
+                <a href="https://www.pinterest.com/housestagingmelbourne/" class="icon-pin" target="_blank" aria-label="Pinterest">
+                    <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.66 19.3c.1-.88.19-2.22.43-3.18.22-.9 1.45-6.14 1.45-6.14s-.37-.74-.37-1.84c0-1.72 1-3 2.25-3 1 0 1.5.76 1.5 1.67 0 1.04-.66 2.59-1 4.02-.28 1.2.6 2.18 1.78 2.18 2.13 0 3.77-2.25 3.77-5.5 0-2.87-2.07-4.88-5.02-4.88-3.4 0-5.4 2.55-5.4 5.18 0 1.04.4 2.16.9 2.77.1.12.11.23.08.35-.1.4-.33 1.34-.37 1.52-.06.23-.2.28-.44.17-1.63-.76-2.65-3.15-2.65-5.07 0-4.1 2.98-7.87 8.6-7.87 4.52 0 8.04 3.22 8.04 7.52 0 4.5-2.84 8.12-6.78 8.12-1.32 0-2.56-.68-2.98-1.5l-.8 3.1c-.3 1.1-1.1 2.5-1.65 3.35A10 10 0 1 0 12 2z"></path></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/style-homes-melbourne-1002bb41a/" class="icon-in" target="_blank" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="https://www.reddit.com/user/housestagingmelbourn/" class="icon-red" target="_blank" aria-label="Reddit">
+                    <svg viewBox="0 0 24 24"><path d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8.5 15.5c1.5 1 5.5 1 7 0" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="11" r="1" fill="currentColor"/><circle cx="15" cy="11" r="1" fill="currentColor"/></svg>
+                </a>
+                <a href="https://about.me/housestagingmelbourne" class="icon-ab" target="_blank" aria-label="About.me">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
+                </a>
+                <a href="https://www.tumblr.com/housestagingmelbourne" class="icon-tm" target="_blank" aria-label="Tumblr">
+                    <svg viewBox="0 0 24 24"><path d="M14.56 15.5c-.52 0-1.03-.22-1.33-.61-.31-.38-.42-.89-.31-1.38V8.62H16v-3h-3.08V2h-3.22v3.62H7v3h2.7v5.27c0 1.45.54 2.8 1.54 3.75C12.24 18.6 13.6 19 15.08 19h1.92v-3h-2.44z"/></svg>
+                </a>
+                <a href="https://bsky.app/profile/housestagingmelbou.bsky.social" class="icon-bs" target="_blank" aria-label="Bluesky">
+                    <svg viewBox="0 0 24 24"><path d="M12 10.8c-1.2-2.1-3.6-4.5-6-5.8-3.3-1.8-4.8-.8-4.8 2.6 0 1.2.6 4.3.9 5.2 1.3 4.2 4.9 5.2 8.7 4.2-2.1 3.5-6.3 4.6-9.6 2.9 5.4 3.4 10.8.6 10.8-4.4v-4.7zm0 0c1.2-2.1 3.6-4.5 6-5.8 3.3-1.8 4.8-.8 4.8 2.6 0 1.2-.6 4.3-.9 5.2-1.3 4.2-4.9 5.2-8.7 4.2 2.1 3.5 6.3 4.6 9.6 2.9-5.4 3.4-10.8.6-10.8-4.4v-4.7z"/></svg>
+                </a>
+                <a href="https://linktr.ee/housestagingmelbourne" class="icon-lt" target="_blank" aria-label="Linktree">
+                    <svg viewBox="0 0 24 24"><path d="M12 21V10m0 0l-5 5m5-5l5 5m-5-5V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Final Key Takeaways Card -->
+    <div class="card">
+        <h2>Key Takeaways</h2>
+        <p>Increasing buyer interest doesn't always require major renovations. A clean, organised, well-maintained, and professionally presented home often creates a stronger first impression than costly upgrades. By focusing on presentation, simple improvements, and effective marketing, Melbourne homeowners can improve buyer engagement while keeping preparation costs under control.</p>
+    </div>
+
+</div>
+
+<!-- Scroll Animation Script -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const cards = document.querySelectorAll('.card');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1, 
+            rootMargin: "0px 0px -50px 0px"
+        });
+
+        cards.forEach(card => {
+            observer.observe(card);
+        });
+    });
+</script>
+
+</body>
+</html>
